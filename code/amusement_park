@@ -1,0 +1,25 @@
+# Amusement park program
+
+ticket_cost, tickets = 15, 2
+print("The total cost is £" + str(ticket_cost * tickets))
+
+attractions = [
+    "carousel", "bouncy castle",
+    "slide", "roller coaster",
+    "ferris wheel"
+]
+
+closed_attraction = attractions.pop(3)
+print("\nThe " + closed_attraction + " is closed today\n")
+
+print("The open attractions are: ")
+for attraction in attractions:
+    print(attraction.title())
+
+if "bouncy castle" in attractions:
+    print("\nLet's go to the bouncy castle!")
+
+castle_false = False
+
+if not castle_false:
+    print("\nWe're jumping in the bouncy castle!")
